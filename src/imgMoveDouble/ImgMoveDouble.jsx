@@ -2,7 +2,9 @@ import React, { Fragment } from 'react';
 import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 import MoveSourceAndTarget from './components/MoveSourceAndTarget';
-// import ImgMoveTarget from './components/ImgMoveTarget';
+import girl2 from './../picture/girl2.png';
+import longCat from './../picture/longCat.png';
+import warMan from './../picture/warMan.png';
 
 class ImgMove extends React.Component{
     constructor(props){
@@ -10,11 +12,11 @@ class ImgMove extends React.Component{
         this.state = {
             data: [{
                     id: 0,
-                    url: "https://iconfont.alicdn.com/t/2fc27ba5-e74c-4b6f-915d-cbb1e66ab439.png"
+                    url: girl2
                 },
                 {
                     id: 1,
-                    url: ""
+                    url: longCat
                 },
                 {
                     id: 2,
@@ -22,7 +24,7 @@ class ImgMove extends React.Component{
                 },
                 {
                     id: 3,
-                    url: ""
+                    url: warMan
                 },
             ]
         }
@@ -44,7 +46,7 @@ class ImgMove extends React.Component{
                 <h1>图片双向拖拽：</h1>
                 <div style={{
                     display: 'flex',
-                    width: '800px',
+                    width: '700px',
                     justifyContent: 'space-between'
                 }}>
                     {

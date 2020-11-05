@@ -69,8 +69,8 @@ class ImgMoveSource extends React.Component{
         return connectDragSource(
             <div style={{
                 width: '100px',
-                height: '240px',
-                background: '#8BC34A'
+                height: '100px',
+                background: 'rgba(139, 195, 74, .5)'
             }}>
                 <img alt='' src={url} style={{ width: '100px' }}></img>
             </div>

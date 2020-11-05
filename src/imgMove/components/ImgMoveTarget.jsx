@@ -55,8 +55,8 @@ class ImgMoveTarget extends React.Component{
         return connectDropTarget(
             <div style={{
                 width: '100px',
-                height: '240px',
-                background: '#FFC107'
+                height: '100px',
+                background: 'rgba(255, 193, 7, .4)'
             }}>
                 <img alt='' src={url.imgUrl} style={{ width: '100px' }}></img>
             </div>

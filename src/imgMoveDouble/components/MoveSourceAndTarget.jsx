@@ -115,8 +115,8 @@ class MoveSourceAndTarget extends React.Component{
                     key={itemData.id} 
                     style={{
                         width: '100px',
-                        height: '240px',
-                        background: '#8BC34A'
+                        height: '100px',
+                        background: 'rgba(139, 195, 74, 0.5)'
                     }}
                 >
                     <img alt='' src={itemData.url} style={{ width: '100px' }}></img>
