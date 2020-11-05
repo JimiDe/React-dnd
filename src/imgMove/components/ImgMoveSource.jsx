@@ -58,7 +58,6 @@ const collect = (connect, monitor) => ({
     didDrop: monitor.didDrop(),         // source是否已经drop在target
     getInitialClientOffset: monitor.getInitialClientOffset(),   // 拖拽组件初始拖拽时offset
     getClientOffset: monitor.getClientOffset(), // 拖拽组件当前offset
-    getSourceClientOffset: monitor.getSourceClientOffset(),  // 拖拽组件的根Dom节点当前offset
     getDifferenceFromInitialOffset: monitor.getDifferenceFromInitialOffset(), // 当前拖拽offset和初始拖拽offset的差别
     getInitialSourceClientOffset: monitor.getInitialSourceClientOffset(), // 拖拽组件的根Dom节点初始拖拽时offset
     getSourceClientOffset: monitor.getSourceClientOffset(),  // 拖拽组件的根Dom节点当前offset
@@ -67,7 +66,6 @@ const collect = (connect, monitor) => ({
 class ImgMoveSource extends React.Component{
     render(){
         const { connectDragSource, url } = this.props;
-        console.log('source:', this.props);
         return connectDragSource(
             <div style={{
                 width: '100px',

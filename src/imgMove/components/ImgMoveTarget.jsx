@@ -52,7 +52,6 @@ class ImgMoveTarget extends React.Component{
     }
     render(){
         const { connectDropTarget, url } = this.props;
-        console.log('target:', this.props);
         return connectDropTarget(
             <div style={{
                 width: '100px',

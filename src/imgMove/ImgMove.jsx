@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 import ImgMoveSource from './components/ImgMoveSource';
@@ -20,21 +20,23 @@ class ImgMove extends React.Component{
     }
     render(){
         return (
-            <div style={{
-                display: 'flex',
-                width: '300px',
-                justifyContent: 'space-between'
-            }}>
-                <DndProvider backend={HTML5Backend}>
-                    {/* 要拖动的组件 */}
-                    <ImgMoveSource url={this.state.imgSourceUrl} changeUrl={this.changeImgUrl}/>
-                    {/* 接受拖动的组件 */}
-                    <ImgMoveTarget url={this.state.imgTargetUrl} />
-                </DndProvider>
-            </div>
+            <Fragment>
+                <h1>图片单向拖拽：</h1>
+                <div style={{
+                    display: 'flex',
+                    width: '300px',
+                    justifyContent: 'space-between'
+                }}>
+                    <DndProvider backend={HTML5Backend}>
+                        {/* 要拖动的组件 */}
+                        <ImgMoveSource url={this.state.imgSourceUrl} changeUrl={this.changeImgUrl}/>
+                        {/* 接受拖动的组件 */}
+                        <ImgMoveTarget url={this.state.imgTargetUrl} />
+                    </DndProvider>
+                </div>
+            </Fragment>
         )
     }
-    
 }
 
 export default ImgMove;
