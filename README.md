@@ -3,6 +3,6 @@
 
 # 查看
 在项目目录下可使用`yarn start`或`npm start`命令启动项目，
-在http://localhost:3000/查看实例的拖拽效果。
+在 http://localhost:3000/ 查看实例的拖拽效果。
 
 
