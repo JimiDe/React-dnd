@@ -34,12 +34,11 @@ const itemSpecSource = {
         if(didDrop){
             props.changeUrl('', item)
         }
-        //...
     },
     //拖动时触发的事件，可选
-    isDragging(props, monitor){
-        //...
-    }
+    // isDragging(props, monitor){
+    //     //...
+    // }
 }
 
 /*该函数返回的对象会被注入到组件的props中，即可以通过this.props获取collect返回的所有属性
@@ -48,19 +47,19 @@ const itemSpecSource = {
 */
 const collect = (connect, monitor) => ({
     connectDragSource: connect.dragSource(), // dragSorce()返回一个方法，将source组件传入这个方法，可以将source Dom和React Dnd backend连接起来
-    connectDragPreview: connect.dragPreview(), // dragSorce()返回一个方法，将source组件传入这个方法，可以将source Dom和React Dnd backend连接起来
+    // connectDragPreview: connect.dragPreview(), // dragSorce()返回一个方法，将source组件传入这个方法，可以将source Dom和React Dnd backend连接起来
     
-    canDrag: monitor.canDrag(),    // 是否能被拖拽
-    isDragging: monitor.isDragging(),  // 是否正在拖拽
-    getItemType: monitor.getItemType(), // 拖拽组件type
-    getItem: monitor.getItem(),         // 当前拖拽的item
-    getDropResult: monitor.getDropResult(),   // 查询drop结果
-    didDrop: monitor.didDrop(),         // source是否已经drop在target
-    getInitialClientOffset: monitor.getInitialClientOffset(),   // 拖拽组件初始拖拽时offset
-    getClientOffset: monitor.getClientOffset(), // 拖拽组件当前offset
-    getDifferenceFromInitialOffset: monitor.getDifferenceFromInitialOffset(), // 当前拖拽offset和初始拖拽offset的差别
-    getInitialSourceClientOffset: monitor.getInitialSourceClientOffset(), // 拖拽组件的根Dom节点初始拖拽时offset
-    getSourceClientOffset: monitor.getSourceClientOffset(),  // 拖拽组件的根Dom节点当前offset
+    // canDrag: monitor.canDrag(),    // 是否能被拖拽
+    // isDragging: monitor.isDragging(),  // 是否正在拖拽
+    // getItemType: monitor.getItemType(), // 拖拽组件type
+    // getItem: monitor.getItem(),         // 当前拖拽的item
+    // getDropResult: monitor.getDropResult(),   // 查询drop结果
+    // didDrop: monitor.didDrop(),         // source是否已经drop在target
+    // getInitialClientOffset: monitor.getInitialClientOffset(),   // 拖拽组件初始拖拽时offset
+    // getClientOffset: monitor.getClientOffset(), // 拖拽组件当前offset
+    // getDifferenceFromInitialOffset: monitor.getDifferenceFromInitialOffset(), // 当前拖拽offset和初始拖拽offset的差别
+    // getInitialSourceClientOffset: monitor.getInitialSourceClientOffset(), // 拖拽组件的根Dom节点初始拖拽时offset
+    // getSourceClientOffset: monitor.getSourceClientOffset(),  // 拖拽组件的根Dom节点当前offset
 })
 
 class MoveSource extends React.Component{
