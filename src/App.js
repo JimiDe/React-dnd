@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import MoveToBlank from './MoveToBlank';
 import MoveToBlanks from './MoveToBlanks';
 import MoveExchange from './MoveExchange';
+import MoveOrder from './MoveOrder';
 
 class App extends React.Component{
   render(){
@@ -10,6 +11,7 @@ class App extends React.Component{
         <MoveToBlank />
         <MoveToBlanks />
         <MoveExchange />
+        <MoveOrder />
       </Fragment>
     )
   }
