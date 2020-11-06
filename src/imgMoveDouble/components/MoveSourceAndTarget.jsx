@@ -68,7 +68,7 @@ const itemSpecTarget = {
     //是否能够被拖动，可选
     canDrop(props, monitor){  
         const { itemData } = props;
-        if(itemData.url == ''){
+        if(itemData.url === ''){
             return true
         }else{
             return false

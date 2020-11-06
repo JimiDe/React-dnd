@@ -34,7 +34,6 @@ class ImgMove extends React.Component{
         let tempUrl = urlData[sourceIndex].url;
         urlData[sourceIndex].url = urlData[targetIndex].url;
         urlData[targetIndex].url = tempUrl;
-        console.log(urlData);
         this.setState({
             data: urlData
         })
@@ -51,7 +50,7 @@ class ImgMove extends React.Component{
                 }}>
                     {
                         data.map(item => (
-                            <DndProvider backend={HTML5Backend}>
+                            <DndProvider backend={HTML5Backend} key={item.id}>
                                 {/* 要拖动和放置的组件 */}
                                 <MoveSourceAndTarget itemData={item} changeUrl={this.changeImgUrl}/>
                             </DndProvider>
