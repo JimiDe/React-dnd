@@ -63,7 +63,7 @@ const collect = (connect, monitor) => ({
     getSourceClientOffset: monitor.getSourceClientOffset(),  // 拖拽组件的根Dom节点当前offset
 })
 
-class ImgMoveSource extends React.Component{
+class MoveSource extends React.Component{
     render(){
         const { connectDragSource, url } = this.props;
         return connectDragSource(
@@ -79,4 +79,4 @@ class ImgMoveSource extends React.Component{
     }
 }
     
-export default DragSource(imgDragType, itemSpecSource, collect)(ImgMoveSource);
+export default DragSource(imgDragType, itemSpecSource, collect)(MoveSource);

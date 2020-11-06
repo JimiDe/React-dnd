@@ -1,11 +1,11 @@
 import React, { Fragment } from 'react';
 import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
-import ImgMoveSource from './components/ImgMoveSource';
-import ImgMoveTarget from './components/ImgMoveTarget';
+import MoveSource from './components/MoveSource';
+import MoveTarget from './components/MoveTarget';
 import first from './../picture/first-pink.png';
 
-class ImgMove extends React.Component{
+class MoveToBlank extends React.Component{
     constructor(props){
         super(props);
         this.state = {
@@ -22,7 +22,7 @@ class ImgMove extends React.Component{
     render(){
         return (
             <Fragment>
-                <h1>图片单向拖拽：</h1>
+                <h1>图片可拖拽至粉色空白区域，仅可操作一次：</h1>
                 <div style={{
                     display: 'flex',
                     width: '300px',
@@ -30,9 +30,9 @@ class ImgMove extends React.Component{
                 }}>
                     <DndProvider backend={HTML5Backend}>
                         {/* 要拖动的组件 */}
-                        <ImgMoveSource url={this.state.imgSourceUrl} changeUrl={this.changeImgUrl}/>
+                        <MoveSource url={this.state.imgSourceUrl} changeUrl={this.changeImgUrl}/>
                         {/* 接受拖动的组件 */}
-                        <ImgMoveTarget url={this.state.imgTargetUrl} />
+                        <MoveTarget url={this.state.imgTargetUrl} />
                     </DndProvider>
                 </div>
             </Fragment>
@@ -40,4 +40,4 @@ class ImgMove extends React.Component{
     }
 }
 
-export default ImgMove;
+export default MoveToBlank;

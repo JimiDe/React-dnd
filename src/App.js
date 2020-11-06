@@ -1,15 +1,15 @@
 import React, { Fragment } from 'react';
-import ImgMove from './imgMove';
-import ImgMoveDouble from './imgMoveDouble';
-import ImgReorder from './ImgReorder';
+import MoveToBlank from './MoveToBlank';
+import MoveToBlanks from './MoveToBlanks';
+import MoveExchange from './MoveExchange';
 
 class App extends React.Component{
   render(){
     return (
       <Fragment>
-        <ImgMove />
-        <ImgMoveDouble />
-        <ImgReorder />
+        <MoveToBlank />
+        <MoveToBlanks />
+        <MoveExchange />
       </Fragment>
     )
   }

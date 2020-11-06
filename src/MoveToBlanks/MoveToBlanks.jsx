@@ -6,7 +6,7 @@ import first from './../picture/first-blue.png';
 import second from './../picture/second-blue.png';
 import third from './../picture/third-blue.png';
 
-class ImgMove extends React.Component{
+class MoveToBlanks extends React.Component{
     constructor(props){
         super(props);
         this.state = {
@@ -42,7 +42,7 @@ class ImgMove extends React.Component{
         const { data } = this.state;
         return (
             <Fragment>
-                <h1>图片双向拖拽：</h1>
+                <h1>图片可拖拽至蓝色空白区域，可操作多次：</h1>
                 <div style={{
                     display: 'flex',
                     width: '700px',
@@ -62,4 +62,4 @@ class ImgMove extends React.Component{
     }
 }
 
-export default ImgMove;
+export default MoveToBlanks;

@@ -3,7 +3,7 @@ import { DragSource, DropTarget } from 'react-dnd';
 import flow from 'lodash/flow';
 
 //类型
-const imgDragType = 'imgDragType';
+const imgDragType = 'doubleDragType';
 
 /*拖动组件时回调的一些方法
 * props: 组件当前的props

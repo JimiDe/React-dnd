@@ -43,7 +43,7 @@ const collect = (connect, monitor) => ({
     getSourceClientOffset: monitor.getSourceClientOffset()   // 拖拽组件的根Dom节点当前offset
 })
 
-class ImgMoveTarget extends React.Component{
+class MoveTarget extends React.Component{
     constructor(props){
         super(props);
         this.state = {
@@ -66,4 +66,4 @@ class ImgMoveTarget extends React.Component{
 }    
     
 
-export default DropTarget(imgDragType, itemSpecTarget, collect)(ImgMoveTarget);
+export default DropTarget(imgDragType, itemSpecTarget, collect)(MoveTarget);

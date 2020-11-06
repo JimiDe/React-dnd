@@ -28,7 +28,7 @@ const collectTarget = (connect, monitor) => ({
     connectionDropTarget: connect.dropTarget(), 
 })
 
-class ItemMove extends React.Component{
+class MoveSourceAndTarget extends React.Component{
     render(){
         const { connectionDragSource, connectionDropTarget, itemData } = this.props;
         return (connectionDragSource(connectionDropTarget(
@@ -49,4 +49,4 @@ class ItemMove extends React.Component{
 }
 
 export default flow(DragSource(imgDragType, itemSpecSource, collectSource), 
-                    DropTarget(imgDragType, itemSpecTarget, collectTarget))(ItemMove);
+                    DropTarget(imgDragType, itemSpecTarget, collectTarget))(MoveSourceAndTarget);
