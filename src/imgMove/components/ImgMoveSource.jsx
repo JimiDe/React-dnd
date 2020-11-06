@@ -70,7 +70,8 @@ class ImgMoveSource extends React.Component{
             <div style={{
                 width: '100px',
                 height: '100px',
-                background: 'rgba(139, 195, 74, .5)'
+                background: 'rgba(212, 35, 122, .3)',
+                borderRadius: '10px'
             }}>
                 <img alt='' src={url} style={{ width: '100px' }}></img>
             </div>

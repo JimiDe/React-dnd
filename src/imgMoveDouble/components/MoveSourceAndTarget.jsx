@@ -116,7 +116,8 @@ class MoveSourceAndTarget extends React.Component{
                     style={{
                         width: '100px',
                         height: '100px',
-                        background: 'rgba(139, 195, 74, 0.5)'
+                        background: 'rgba(68, 114, 196, .4)',
+                        borderRadius: '10px'
                     }}
                 >
                     <img alt='' src={itemData.url} style={{ width: '100px' }}></img>

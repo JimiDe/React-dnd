@@ -2,9 +2,9 @@ import React, { Fragment } from 'react';
 import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 import MoveSourceAndTarget from './components/MoveSourceAndTarget';
-import girl2 from './../picture/girl2.png';
-import longCat from './../picture/longCat.png';
-import warMan from './../picture/warMan.png';
+import first from './../picture/first-blue.png';
+import second from './../picture/second-blue.png';
+import third from './../picture/third-blue.png';
 
 class ImgMove extends React.Component{
     constructor(props){
@@ -12,19 +12,19 @@ class ImgMove extends React.Component{
         this.state = {
             data: [{
                     id: 0,
-                    url: girl2
+                    url: first
                 },
                 {
                     id: 1,
-                    url: longCat
+                    url: second
                 },
                 {
                     id: 2,
-                    url: ""
+                    url: third
                 },
                 {
                     id: 3,
-                    url: warMan
+                    url: ''
                 },
             ]
         }

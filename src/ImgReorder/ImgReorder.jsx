@@ -2,11 +2,11 @@ import React, { Fragment } from 'react';
 import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 import ItemMove from './components/itemMove';
-import fitness1 from './../picture/fitness1.png';
-import fitness2 from './../picture/fitness2.png';
-import fitness3 from './../picture/fitness3.png';
-import fitness4 from './../picture/fitness4.png';
-import fitness5 from './../picture/fitness5.png';
+import first from './../picture/first-green.png';
+import second from './../picture/second-green.png';
+import third from './../picture/third-green.png';
+import fourth from './../picture/fourth-green.png';
+import fifth from './../picture/fifth-green.png';
 
 class ListReorder extends React.Component{
     constructor(props){
@@ -14,23 +14,23 @@ class ListReorder extends React.Component{
         this.state = {
             listData: [{
                 id: 0,
-                url: fitness1
+                url: first
             },
             {
                 id: 1,
-                url: fitness2
+                url: second
             },
             {
                 id: 2,
-                url: fitness3
+                url: third
             },
             {
                 id: 3,
-                url: fitness4
+                url: fourth
             },
             {
                 id: 4,
-                url: fitness5
+                url: fifth
             },
             ]
         }

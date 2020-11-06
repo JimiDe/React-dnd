@@ -3,13 +3,13 @@ import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 import ImgMoveSource from './components/ImgMoveSource';
 import ImgMoveTarget from './components/ImgMoveTarget';
-import girl1 from './../picture/girl1.png';
+import first from './../picture/first-pink.png';
 
 class ImgMove extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            imgSourceUrl: girl1,
+            imgSourceUrl: first,
             imgTargetUrl: "" 
         }
     }

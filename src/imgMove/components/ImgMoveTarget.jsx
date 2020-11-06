@@ -56,7 +56,8 @@ class ImgMoveTarget extends React.Component{
             <div style={{
                 width: '100px',
                 height: '100px',
-                background: 'rgba(255, 193, 7, .4)'
+                background: 'rgba(212, 35, 122, .3)',
+                borderRadius: '10px'
             }}>
                 <img alt='' src={url.imgUrl} style={{ width: '100px' }}></img>
             </div>

@@ -37,7 +37,8 @@ class ItemMove extends React.Component{
                 style={{
                     width: '100px',
                     height: '100px',
-                    background: 'rgba(139, 195, 74, 0.5)'
+                    background: 'rgba(14, 147, 46, .4)',
+                    borderRadius: '10px'
                 }}
             >
                 <img alt='' src={itemData.url} style={{ width: '100px' }}></img>
